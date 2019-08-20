@@ -1,0 +1,38 @@
+齐悟bot Python接入样例使用说明：
+
+@Author Siyang Zhang
+@Date Aug 20, 2019
+
+
+
+
+1. 对话问答接口：
+   调用函数 getChatResponse() , 必填参数ask, 类型为字符串。
+   含义：
+   		ask : 用户的话
+
+
+
+
+
+2. LBS坐标上报接口：
+   调用函数 getGeoResponse() , 必填参数ask, lng, lat 类型均为字符串。
+      含义：
+   		ask : 用户的话
+   		lng : 经度
+   		lat : 纬度
+
+   备注：经纬度也可传float类的参数
+
+
+
+
+
+3. 语音交互接口：
+	3.1 application/octet-stream请求接口：
+	调用函数 getOctetSpeechResponse() , 必填参数为file，类型为字符串，意为文件名。
+	若当前文件不在py文件的相同目录下，file需要完整地址。
+
+	3.2 multipart/form-data请求接口：
+	调用函数 getMultipartSpeechResponse() , 必填参数为file，类型为字符串，意为文件名。
+	若当前文件不在py文件的相同目录下，file需要完整地址。
