@@ -1,0 +1,38 @@
+
+base: https://account-center-test.chewrobot.com/api/open/v1/
+paths: 
+  authorize: channel/token # GET POST DELETE 渠道鉴权及注销
+
+  captcha: captcha/sms # GET
+
+  token: user/token # GET POST DELETE
+
+  sub: user/sub  # POST
+
+  orderlist: orders # GET 订单列表
+
+  order: order # GET 订单详情 DELETE 取消订单
+
+  pay: order/pay # GET
+
+  pay-by-qr: order/pay/qr # GET
+
+  base: balance # GET
+
+  recharge: balance/topup # GET
+
+  pay: order/pay  # GET
+
+  qr: order/pay/qr  # GET
+
+
+
+
+
+aesKey: NY8iA0QYXVgsje5pcDiaUOwKsCSjEWlfGlXxJ/9KikY= 
+
+aesIv: 5a2wShLw7EWa8Fiw+cWYcQ==
+
+privateKey: 1c9f03b3-c920-4d68-b2cd-299a28557890
+
+appchannel: feli-tech-test
